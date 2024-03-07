@@ -1,0 +1,241 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="loginStudent.master.cs" Inherits="SMS.loginStudent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SMS</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="Sulfur - Responsive HTML5 Template">
+    <meta name="author" content="Yash Jeswani">
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="asset/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="asset/css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="asset/css/owl.transitions.css" type="text/css">
+
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="asset/css/animate.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" type="text/css" href="asset/css/lightbox.css">
+
+    <!-- Sulfur CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+    <!-- Responsive CSS Style -->
+    <link rel="stylesheet" type="text/css" href="asset/css/responsive.css">
+
+    <style>
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="clearfix">
+
+            <!-- Start Top Bar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-bar">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Start Contact Info -->
+                                    <ul class="contact-details">
+                                        <li><a href="#"><i class="fa fa-phone"></i>+91 7340092326</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-envelope-o"></i>yashjeswani63@gmail.com</a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- .col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <!-- Start Social Links -->
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="#"><i class="fa fa-rss"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.googleplus.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.flickr.com" target="_blank"><i class="fa fa-flickr"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.vimeosquare.com" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.skype.com" target="_blank"><i class="fa fa-skype"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Social Links -->
+                                </div>
+                                <!-- .col-md-6 -->
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+            <!-- End Top Bar -->
+
+            <!-- Start  Logo & Naviagtion  -->
+            <div class="navbar navbar-default navbar-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Stat Toggle Nav Link For Mobiles -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- End Toggle Nav Link For Mobiles -->
+                        <a class="navbar-brand" href="visitor.aspx">Teach Tech Institute</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+
+                        <!-- Start Navigation List -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="loginstudent.aspx">Home</a>
+
+                            </li>
+                            <li>
+                                <a href="Profile.aspx">Profile</a>
+                            </li>
+                            <li>
+                                <a href="PersonalCourse.aspx">Explore Your Course</a>
+                            </li>
+                            <li>
+                                <a href="Courses1.aspx">Courses</a>
+                            </li>
+                            <li>
+                                <a href="Favorites.aspx">Favourites</a>
+                            </li>
+                            <li>
+                                <a href="ChangePassword.aspx">Change Password</a>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="logoutLink" runat="server" OnClick="logoutLink_Click">Logout</asp:LinkButton>
+                            </li>
+                        </ul>
+                        <!-- End Navigation List -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Logo & Naviagtion -->
+
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <section id="footer-section" class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Office Address</span>
+                            </h3>
+                        </div>
+
+                        <div class="footer-address">
+                            <ul>
+                                <li class="footer-contact"><i class="fa fa-home"></i>p-4, Vaishali Nagar, Ajmer</li>
+                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@sms.com</a></li>
+                                <li class="footer-contact"><i class="fa fa-phone"></i>011-4638363</li>
+                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.sms.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.col-md-3 -->
+
+
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Latest Tweet</span>
+                            </h3>
+                        </div>
+
+                        <div class="latest-tweet">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="fa fa-twitter fa-2x media-object"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">About 15 days ago</h4>
+                                    <p>Finally #tutsplus start a tutorial on A Beginner’s Guide to Using #joomla . Check it out here http://t.co/i6S4zeW8Z0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-3 -->
+
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Stay With us</span>
+                            </h3>
+                        </div>
+                        <div class="subscription">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                            <%--  <div class="form-group">
+                         <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
+                         <input type="submit" class="btn btn-primary" value="Subscribe">
+                     </div>--%>
+                        </div>
+                    </div>
+
+
+                    <!--/.col-md-3 -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+    </form>
+</body>
+</html>
